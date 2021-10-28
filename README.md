@@ -1,10 +1,10 @@
-# ✅ AI-Chatbot 
+# ✅ AI Chatbot Builder App
 
-An Intelligent AI chatbot using neural networks and natural language processing in Python
+An Intelligent AI chatbot Builder using neural networks and natural language processing in Python and R
 
 ## 🌻 Motivation
 
-To build a simple AI Chatbot to explain to my students
+To build a simple AI Chatbot using this Chatbot Builder
 
 ### ✨ Contents 
 
@@ -15,7 +15,7 @@ This repository contains files to build and run an AI Chatbot
 * Download the code files
 
 ```
-git clone https://github.com/PawanRamaMali/AI-Chatbot.git 
+git clone https://github.com/PawanRamaMali/Chatbot-Builder-App.git 
 
 ```
 
