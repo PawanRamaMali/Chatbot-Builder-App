@@ -3,8 +3,13 @@ library(shinydashboard)
 Build <-
   source('./ui/admin/build_page.R', local = TRUE)
 
+Converse <-
+  source('./ui/admin/converse_page.R', local = TRUE)
+
 Train <-
   source('./ui/admin/train_page.R', local = TRUE)
+
+
 
 
 About <-
@@ -54,6 +59,9 @@ fluidPage(
       
       # Build Page ----
       Build$value,
+      
+      # Converse Page ----
+      Converse$value,
       
       # Train Page ----
       Train$value,
