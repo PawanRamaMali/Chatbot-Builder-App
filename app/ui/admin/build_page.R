@@ -24,7 +24,7 @@ tabPanel("Build",
              column(
                1,
                actionButton(
-                 inputId = "start_build",
+                 inputId = "submit_name",
                  label = "Submit",
                  icon = NULL,
                  
@@ -33,4 +33,31 @@ tabPanel("Build",
                style="margin-top: 10px;"
              )
              
-           )))
+           ),
+           fluidRow(
+             column(1,
+                    h5("Select Language : "),
+                    style="padding-top:16px;"),
+             column(2,
+                    selectInput(
+                      inputId = "Chatbot_Language",
+                      choices = c("English (US)", "English (UK)"),
+                      selected = "English (US)",
+                      label = ""
+                    )),
+             column(
+               1,
+               actionButton(
+                 inputId = "submit_language",
+                 label = "Submit",
+                 icon = NULL,
+                 
+                 class = "btn-success"
+               ),
+               style="margin-top: 10px;"
+             )
+           )
+           
+           
+           
+           ))
