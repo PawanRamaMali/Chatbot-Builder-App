@@ -10,27 +10,20 @@ tabPanel("Train",
            br(),
            
            fluidRow(
-             column(1,
-                    
-                    h5("Chatbot Name : "),
-                    style="padding-top:16px;"),
-             column(2,
-                    textInput(
-                      inputId = "Chatbot_Name",
-                      value = "",
-                      label = ""
-                    )),
-             
-             column(
-               1,
-               actionButton(
-                 inputId = "start_build",
-                 label = "Submit",
-                 icon = NULL,
-                 
-                 class = "btn-success"
+           
+             sidebarLayout(
+               sidebarPanel(
+                 fileInput("Json", "Choose Intents File",
+                           multiple = FALSE,
+                           accept = c(".json"))
                ),
-               style="margin-top: 10px;"
+               
+               # Show a plot of the generated distribution
+               mainPanel(
+                 verbatimTextOutput("intents_data")
+               )
              )
              
-           )))
+             )
+             
+           ))
