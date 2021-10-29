@@ -9,6 +9,12 @@ Converse <-
 Train <-
   source('./ui/admin/train_page.R', local = TRUE)
 
+Test <-
+  source('./ui/admin/test_page.R', local = TRUE)
+
+Deploy <-
+  source('./ui/admin/deploy_page.R', local = TRUE)
+
 
 
 
@@ -66,6 +72,11 @@ fluidPage(
       # Train Page ----
       Train$value,
       
+      # Test Page ----
+      Test$value,
+      
+      # Deploy Page ----
+      Deploy$value,
       
       # About Page ----
       About$value
