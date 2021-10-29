@@ -3,29 +3,34 @@
 tabPanel("Build",
          value = "Build",
          fluidPage
-         (fluidRow(
-           h3("Build your Chatbot"),
+         (fluidRow(h3("Build your chatbot")),
+           
            
            br(),
            br(),
-          
            
-           column(
-             2,
-             textInput(
-               inputId = "Chatbot_Name",
-               value = "",
-               label = "Enter your Chatbot name : "
-             ),
+           fluidRow(
+             column(1,
+                    
+                    h5("Chatbot Name : "),
+                    style="padding-top:16px;"),
+             column(2,
+                    textInput(
+                      inputId = "Chatbot_Name",
+                      value = "",
+                      label = ""
+                    )),
              
-             actionButton(
-               inputId = "start_build",
-               label = "Submit",
-               icon = NULL,
-               width = "100%",
-               class = "btn-success"
+             column(
+               1,
+               actionButton(
+                 inputId = "start_build",
+                 label = "Submit",
+                 icon = NULL,
+                 
+                 class = "btn-success"
+               ),
+               style="margin-top: 10px;"
              )
-           )
-          
-           
-         )))
+             
+           )))
