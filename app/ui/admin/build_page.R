@@ -36,7 +36,7 @@ tabPanel("Build",
            ),
            fluidRow(
              column(1,
-                    h5("Select Language : "),
+                    h5("Language : "),
                     style="padding-top:16px;"),
              column(2,
                     selectInput(
@@ -56,6 +56,30 @@ tabPanel("Build",
                ),
                style="margin-top: 10px;"
              )
+           ),
+           
+           fluidRow(
+             column(1,
+                    h5("Upload Intents : "),
+                    style="padding-top:16px;"),
+             column(2,
+                    fileInput("Json", label = "",
+                              multiple = FALSE,
+                              accept = c(".json"))
+                    
+                    ),
+             column(
+               1,
+               actionButton(
+                 inputId = "submit_intents",
+                 label = "Submit",
+                 icon = NULL,
+                 
+                 class = "btn-success"
+               ),
+               style="margin-top: 10px;"
+             )
+             
            )
            
            
